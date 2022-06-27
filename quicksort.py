@@ -24,4 +24,5 @@ input_l = queue.create()
 list_length = len(input_l)
 quickSort(input_l, 0, list_length -1)
 
-print(input_l)
+print(f"Quickly sorted ! :      {input_l}")
+
