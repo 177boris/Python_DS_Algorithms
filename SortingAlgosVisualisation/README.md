@@ -1,4 +1,4 @@
-Visualising sorting algorithms using Python and Tkinter. 
+Visualising sorting algorithms using Python and the Tkinter library. 
 
 Algorithms included:
 

@@ -1,7 +1,15 @@
+"""
+    Quicksort is an efficient sorting algorithm.
+    When implemented well, it can be about two or three times faster
+    than merge sort and heapsort.
+"""
+
+
 from queues import Queue
 
 
 def partition(input_list,low,high):
+     # arrange (left array < pivot) and (right array > pivot)
     i = (low - 1)
     item = input_list[high]
     for j in range(low, high):
@@ -12,6 +20,7 @@ def partition(input_list,low,high):
     return (i+1)
 
 def quickSort(input_list, low, high):
+    # quick sort recursive algorithm 
     if low < high:
         partition_index = partition(input_list,low,high)
         quickSort(input_list, low, partition_index - 1)
